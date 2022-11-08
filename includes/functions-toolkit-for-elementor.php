@@ -10,8 +10,7 @@ if( ! function_exists('is_elementor_pro_activated') ){
 
 if( ! function_exists('is_toolkit_for_elementor_activated') ){
     function is_toolkit_for_elementor_activated(){
-        $toolkit_license_key = sanitize_text_field(trim(get_option( 'toolkit_license_status', '' )));
-        return ($toolkit_license_key) ? true : false;
+        return true;
     }
 }
 
